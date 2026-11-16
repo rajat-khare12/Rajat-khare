@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rajat Khare: Profile, Companies and Investments</title>
+<style>
+  :root{--bg:#dff0fa;--ink:#2b3a45;--blue1:#5bb8f0;--blue2:#1b7fc4;--green1:#9bdc4a;--green2:#4f9c14;--orange1:#ffb347;--orange2:#e8761a;--card:#ffffff;--line:#c4dcec}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Lucida Grande","Lucida Sans Unicode",Verdana,Arial,sans-serif;color:var(--ink);line-height:1.65;
+    background:var(--bg) linear-gradient(#a9dcf7 0,#dff0fa 340px,#eef7fc 100%) no-repeat;min-height:100vh}
+  .wrap{max-width:880px;margin:0 auto;padding:0 16px 40px}
+  .topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 0;flex-wrap:wrap;gap:8px}
+  .logo{font-weight:bold;font-size:22px;color:#fff;text-shadow:0 2px 3px rgba(0,60,110,.45);letter-spacing:-.5px}
+  .logo span{color:var(--orange1)}
+  .nav a{display:inline-block;margin-left:6px;padding:5px 14px;border-radius:14px;color:#fff;text-decoration:none;font-size:13px;
+    background:linear-gradient(#6ec4f4,#2a8ad0);border:1px solid #1b6fae;box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 1px 2px rgba(0,0,0,.25);text-shadow:0 -1px 0 rgba(0,0,0,.3)}
+  .nav a:hover,.nav a:focus-visible{background:linear-gradient(#8bd2f8,#3b9be0);outline:2px solid var(--orange1)}
+  .hero{position:relative;margin:10px 0 28px;padding:34px 30px;border-radius:18px;color:#fff;
+    background:linear-gradient(#58b7ef 0,#1f84cb 55%,#176cab 100%);border:1px solid #14639d;
+    box-shadow:0 6px 18px rgba(10,70,120,.35),inset 0 1px 0 rgba(255,255,255,.55);overflow:hidden}
+  .hero:before{content:"";position:absolute;left:0;right:0;top:0;height:48%;background:linear-gradient(rgba(255,255,255,.38),rgba(255,255,255,.06));border-radius:18px 18px 60% 60%/18px 18px 30px 30px}
+  .hero>*{position:relative}
+  .badge{display:inline-block;transform:rotate(-3deg);padding:3px 12px;border-radius:12px;font-size:12px;font-weight:bold;color:#fff;
+    background:linear-gradient(var(--orange1),var(--orange2));border:1px solid #c25d0c;box-shadow:0 2px 3px rgba(0,0,0,.3);text-shadow:0 -1px 0 rgba(0,0,0,.3)}
+  h1{margin:12px 0 8px;font-size:clamp(26px,5vw,40px);line-height:1.15;text-shadow:0 2px 3px rgba(0,40,80,.5)}
+  .hero p{margin:0 0 6px;max-width:60ch;font-size:15px;text-shadow:0 1px 1px rgba(0,40,80,.4)}
+  .meta{font-size:12px;opacity:.9}
+  .btn{display:inline-block;margin:14px 8px 0 0;padding:9px 22px;border-radius:20px;font-weight:bold;font-size:14px;color:#fff;text-decoration:none;
+    background:linear-gradient(var(--green1),var(--green2));border:1px solid #3d7d0d;box-shadow:inset 0 1px 0 rgba(255,255,255,.65),0 2px 4px rgba(0,0,0,.35);text-shadow:0 -1px 0 rgba(0,0,0,.35)}
+  .btn:hover,.btn:focus-visible{filter:brightness(1.08);outline:2px solid #fff}
+  .btn.alt{background:linear-gradient(var(--orange1),var(--orange2));border-color:#c25d0c}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:22px;overflow:hidden;box-shadow:0 3px 10px rgba(30,100,150,.18)}
+  .card h2{margin:0;padding:10px 20px;font-size:18px;color:#fff;text-shadow:0 1px 2px rgba(0,50,90,.5);
+    background:linear-gradient(#69c1f3,#2a8ad0);border-bottom:1px solid #1b6fae;box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
+  .card .body{padding:18px 22px}
+  .card p{margin:0 0 12px}
+  .card p:last-child{margin-bottom:0}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+  .tags li{padding:5px 14px;border-radius:14px;font-size:13px;font-weight:bold;color:#14507d;
+    background:linear-gradient(#fff,#d4ebfa);border:1px solid #9cc9e6;box-shadow:inset 0 1px 0 #fff,0 1px 2px rgba(0,0,0,.15)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+  .co{padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:linear-gradient(#fff,#eef7fc);box-shadow:0 2px 5px rgba(30,100,150,.15)}
+  .co h3{margin:0 0 2px;font-size:15px;color:var(--blue2)}
+  .flag{display:inline-block;margin-bottom:6px;padding:1px 9px;border-radius:9px;font-size:11px;font-weight:bold;color:#fff;background:linear-gradient(var(--green1),var(--green2));border:1px solid #3d7d0d}
+  .co p{margin:0;font-size:13.5px}
+  ul.tick{margin:0;padding:0;list-style:none}
+  ul.tick li{padding:5px 0 5px 28px;position:relative}
+  ul.tick li:before{content:"✔";position:absolute;left:0;top:5px;width:20px;height:20px;border-radius:50%;text-align:center;line-height:20px;font-size:12px;color:#fff;
+    background:linear-gradient(var(--green1),var(--green2));border:1px solid #3d7d0d;box-shadow:0 1px 2px rgba(0,0,0,.3)}
+  .note{padding:14px 18px;border-radius:12px;background:linear-gradient(#fff8d6,#ffeb9c);border:1px solid #e6c84a;box-shadow:0 2px 5px rgba(0,0,0,.12);font-size:14px}
+  footer{text-align:center;font-size:12px;color:#5d7686;padding-top:8px}
+  footer a{color:var(--blue2)}
+  @media (max-width:560px){.hero{padding:26px 18px}.card .body{padding:16px}.nav a{margin:0 4px 4px 0}}
+  @media (prefers-reduced-motion:no-preference){.btn,.nav a{transition:filter .15s}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="logo">Deep<span>Tech</span>Pulse</div>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about">About</a><a href="#firm">Boundary Holding</a><a href="#portfolio">Portfolio</a><a href="#vision">Vision</a>
+    </nav>
+  </div>
+
+  <header class="hero">
+    <span class="badge">Biography</span>
+    <h1>Rajat Khare: Profile, Companies and Investments</h1>
+    <p>An Indian-born venture capitalist based in Luxembourg, backing deep-tech startups across Europe, Israel and Asia through Boundary Holding.</p>
+    <p class="meta">Posted July 31, 2025 · Biography</p>
+    <a class="btn" href="#portfolio">See the portfolio</a>
+    <a class="btn alt" href="https://www.boundaryholding.com/venture-capitalist-rajat-khare/">Read the source</a>
+  </header>
+
+  <section class="card" id="about">
+    <h2>Who is Rajat Khare?</h2>
+    <div class="body">
+      <p>Rajat Khare is a venture capitalist born in India and the founder of Boundary Holding, a European investment firm that focuses on deep-tech startups. He is known for his long-range view of technology and has become a visible name in innovation spanning artificial intelligence, robotics, aerospace, cybersecurity and medical technology.</p>
+      <p>Working mainly from Luxembourg, Khare has put together an international network of investments in young companies built on disruptive technology. His analytical, scale-minded approach has made him a recognised voice in venture capital.</p>
+    </div>
+  </section>
+
+  <section class="card" id="firm">
+    <h2>Boundary Holding: the heart of his investment network</h2>
+    <div class="body">
+      <p>Boundary Holding is a modern investment firm that finds and supports early-stage and growth-stage companies with strong technological potential. With its base in Europe, it helps carry advanced research out of the lab and into global markets.</p>
+      <p><strong>Focus sectors:</strong></p>
+      <ul class="tags">
+        <li>Artificial Intelligence</li><li>Aerospace &amp; Drones</li><li>Cybersecurity &amp; Surveillance</li><li>HealthTech &amp; MedTech</li><li>Robotics &amp; Automation</li>
+      </ul>
+      <p style="margin-top:14px">Under Khare, the firm has backed more than two dozen companies in Europe, Israel and Asia.</p>
+    </div>
+  </section>
+
+  <section class="card" id="portfolio">
+    <h2>Notable investments</h2>
+    <div class="body">
+      <div class="grid">
+        <div class="co"><span class="flag">France</span><h3>Cerbair</h3><p>Counter-drone technology that protects sensitive airspace from UAV threats.</p></div>
+        <div class="co"><span class="flag">India</span><h3>Asteria Aerospace</h3><p>Drone maker offering surveillance and industrial solutions.</p></div>
+        <div class="co"><span class="flag">Netherlands</span><h3>Datenna</h3><p>Data analytics firm specialising in China–Europe economic intelligence.</p></div>
+        <div class="co"><span class="flag">Singapore</span><h3>XRVision</h3><p>Facial recognition and video analytics for public safety and business use.</p></div>
+        <div class="co"><span class="flag">Czech Republic</span><h3>Neuron Soundware</h3><p>AI-driven predictive maintenance based on acoustic analysis.</p></div>
+      </div>
+      <p style="margin-top:14px">Together, these holdings reflect a preference for mission-driven innovation with lasting, scalable impact.</p>
+    </div>
+  </section>
+
+  <section class="card" id="vision">
+    <h2>Vision and philosophy</h2>
+    <div class="body">
+      <p>Khare looks for technologies that solve real problems while staying ethical and ready for the future. His priorities:</p>
+      <ul class="tick">
+        <li>Adopting deep technologies early</li>
+        <li>Scaling across borders</li>
+        <li>Regulatory readiness and compliance</li>
+        <li>Responsible use of AI and automation</li>
+      </ul>
+      <p style="margin-top:12px">His recent interests include agentic AI, green technology and autonomous systems.</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Recognition and influence</h2>
+    <div class="body">
+      <p>Khare’s work has been covered by international business and technology media. He has been invited to policy discussions and panels on the future of deep-tech investment in Europe and Asia, and his career is also featured in a case study at INSEAD Business School.</p>
+    </div>
+  </section>
+
+  <div class="note"><strong>In short:</strong> through Boundary Holding, Rajat Khare continues to shape global technology by investing in deep-tech companies aimed at a more connected, secure and innovative future.</div>
+
+  <footer>
+    <p>Source: <a href="https://www.boundaryholding.com/venture-capitalist-rajat-khare/">boundaryholding.com</a></p>
+  </footer>
+</div>
+</body>
+</html>
